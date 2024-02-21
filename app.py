@@ -4,9 +4,10 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open("C:/Users/Dell/Desktop/Multiple disease prediction web app/diabetes_model.sav", 'rb'))
-
-heart_disease_model = pickle.load(open("C:/Users/Dell/Desktop/Multiple disease prediction web app/heart_disease_model.sav", 'rb'))
+diabetes_model_path = "C:/Users/Dell/Desktop/Multiple disease prediction web app/diabetes_model.sav"
+diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
+heart_disease_model_path = "C:/Users/Dell/Desktop/Multiple disease prediction web app/heart_disease_model.sav"
+heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
 
 
 
